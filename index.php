@@ -53,55 +53,83 @@
 	<!-- Own Style -->
 	<link rel="stylesheet" type="text/css" href="static/foto.css" />
 
+	<!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- Own Script -->
 	<script type="text/javascript" src="static/script.js"></script>
 
-	<body style="margin-left:50px;margin-top:50px;">
+	<body style="margin-left:100px;margin-top:50px;margin-right:100px;">
 
 		<table style="width:100%">
 		  <tr>
-		    <td align="center"> 
+		    <td align="center" bgcolor="FAE9E3">
+					<br>
 		    	<h3>TEMPLATE</h3>
-		    	<hr>	
-				<form action="" method="POST" enctype="multipart/form-data">
-					<input type="file" name="template" />
-					<input type="submit"/>
-				</form>
-				<br>
-				
-				<button onclick="location.href='deleteAction.php?path=template'">DELETE TEMPLATE</button><br><br>
-				<a href="#" onclick="WidthMinTmp()"><span class="glyphicon glyphicon-minus"></span></a>				
-				<span class="width_span">WIDTH</span>
-				<a href="#" onclick="widthPlusTmp()"><span class="glyphicon glyphicon-plus"></span></a>
-				<br>
-				<a href="#" onclick="heightMinTmp()"><span class="glyphicon glyphicon-minus"></span></a>
-				<span class="height_span">HEIGHT</span>
-				<a href="#" onclick="heightPlusTmp()"><span class="glyphicon glyphicon-plus"></span></a>
-
+		    	<hr>
+					<table style="width:100%">
+						<tr>
+							<td align="left">
+								<form action="" method="POST" enctype="multipart/form-data">
+									<input type="file" name="template" />
+									<input type="submit"/>
+								</form>
+							</td>
+							<td align="left">
+								<button onclick="location.href='deleteAction.php?path=template'">DELETE TEMPLATE</button><br><br>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<table style="width:100%">
+						<tr>
+							<td align="center">
+								<a href="#" onclick="WidthMinTmp()"><span class="glyphicon glyphicon-minus"></span></a>
+								<span class="width_span">WIDTH</span>
+								<a href="#" onclick="widthPlusTmp()"><span class="glyphicon glyphicon-plus"></span></a>
+							</td>
+							<td align="center">
+								<a href="#" onclick="heightMinTmp()"><span class="glyphicon glyphicon-minus"></span></a>
+								<span class="height_span">HEIGHT</span>
+								<a href="#" onclick="heightPlusTmp()"><span class="glyphicon glyphicon-plus"></span></a>
+							</td>
+						</tr>
+					</table>
 		    </td>
-		    <td align="center">   	
+		    <td align="center" bgcolor="E3F4FA">
+				<br>
 				<h3>IMAGE</h3>
 				<hr>
-				<form action="" method="POST" enctype="multipart/form-data">
-					<input type="file" name="image" />
-					<input type="submit"/>
-				</form>
-				<br>
-				<button onclick="location.href='deleteAction.php?path=files'">DELETE IMAGE</button><br><br>
-				<a href="#" onclick="WidthMinImg()"><span class="glyphicon glyphicon-minus"></span></a>
-				<span class="width_span">WIDTH</span>
-				<a href="#" onclick="widthPlusImg()"><span class="glyphicon glyphicon-plus"></span></a>
-				<br>
-				<a href="#" onclick="heightMinImg()"><span class="glyphicon glyphicon-minus"></span></a>
-				<span class="height_span">HEIGHT</span>
-				<a href="#" onclick="heightPlusImg()"><span class="glyphicon glyphicon-plus"></span></a>
-
-		    </td>	
+				<table style="width:100%">
+					<tr>
+						<td align="left">
+							<form action="" method="POST" enctype="multipart/form-data">
+								<input type="file" name="image" />
+								<input type="submit"/>
+							</form>
+						</td>
+						<td align="left">
+							<button onclick="location.href='deleteAction.php?path=files'">DELETE IMAGE</button><br><br>
+						</td>
+					</table>
+					<br>
+				<table style="width:100%">
+					<tr>
+						<td align="center">
+							<a href="#" onclick="WidthMinImg()"><span class="glyphicon glyphicon-minus"></span></a>
+							<span class="width_span">WIDTH</span>
+							<a href="#" onclick="widthPlusImg()"><span class="glyphicon glyphicon-plus"></span></a>
+						</td>
+						<td align="center">
+							<a href="#" onclick="heightMinImg()"><span class="glyphicon glyphicon-minus"></span></a>
+							<span class="height_span">HEIGHT</span>
+							<a href="#" onclick="heightPlusImg()"><span class="glyphicon glyphicon-plus"></span></a>
+						</td>
+					</tr>
+				</table>
+		    </td>
 		  </tr>
 		</table>
-		<hr>
 		<div id="main" style="background-color: #F9F6F4;">
 			<div id="gallery">
 				<?php
@@ -132,7 +160,7 @@
 					if($filenames2){
 						foreach($filenames2 as $file2)
 						{
-							echo '<img id="pic-2" class="pic" style="width:250px;height:250px;top:438px;left:367px;" src="files/'.$file2.'">';
+							echo '<img id="pic-2" class="pic" style="width:250px;height:250px;top:350px;left:350px;" src="files/'.$file2.'">';
 						}
 					}
 				?>
