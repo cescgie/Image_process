@@ -1,6 +1,6 @@
 # image_process
 
-An php-application to combine 2 or more images
+An php-application for testing combine 2 or more images
 
 How to install
 --------------
