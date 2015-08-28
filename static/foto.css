@@ -32,10 +32,6 @@ body{
 	border:0px solid #EEEEEE;
 	border-bottom:0px solid #eeeeee;
 
-	/* CSS3 Box Shadow */
-	/*-moz-box-shadow:2px 2px 2px #333333;
-	-webkit-box-shadow:2px 2px 2px #333333;
-	box-shadow:2px 2px 2px #333333;*/
 }
 
 .pic a{
@@ -58,44 +54,6 @@ label{
 fieldset{
 	border:0;
 	margin-top:10px;
-}
-
-#url{
-	/* The URL field */
-	width:240px;
-}
-
-
-/* General styles for the demo page */
-
-h1{
-	/* The title of the page */
-	color:white;
-	font-family:"MyRiad Pro",Arial,Helvetica,sans-serif;
-	font-size:38px;
-	font-weight:normal;
-}
-
-h2{
-	/* The subtitle */
-	font-family:"MyRiad Pro","Arial Narrow",Arial,Helvetica,sans-serif;
-	font-size:16px;
-	font-weight:normal;
-	letter-spacing:1px;
-	padding-left:2px;
-	text-transform:uppercase;
-	white-space:nowrap;
-	margin:10px 0 25px;
-}
-
-#orig{
-	/* The link that is positioned above the title */
-	font-family:"MyRiad Pro",Arial;
-	font-size:10px;
-	letter-spacing:1px;
-	padding-bottom:15px;
-	text-transform:uppercase;
-	float:right;
 }
 
 hr{
@@ -144,4 +102,7 @@ a:hover{
 }
 .width_span, .height_span{
 	font-size: 20px;
+}
+table{
+	width:100%;
 }

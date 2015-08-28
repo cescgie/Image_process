@@ -49,41 +49,4 @@ $(document).ready(function(){
 		else $(e.target).closest('.pic').css({zIndex:maxZ+1});
 	});
 
-	/* Converting all the links to a fancybox gallery */
-	$("a.fancybox").fancybox({
-		zoomSpeedIn: 300,
-		zoomSpeedOut: 300,
-		overlayShow:false
-	});
-
-	/* Converting the share box into a droppable: */
-	$('.drop-box').droppable({
-		hoverClass: 'active',
-		drop:function(event,ui){
-			/* Fill the URL text field with the URL of the image. */
-			/* The id of the image is appended as a hash #pic-123 */
-			$('#url').val(location.href.replace(location.hash,'')+'#'+ui.draggable.attr('id'));
-			$('#modal').dialog('open');
-		}
-	});
-
-	/* Converts the div with id="modal" into a modal window  */
-	$("#modal").dialog({
-		bgiframe: true,
-		modal: true,
-		autoOpen:false,
-		buttons: {
-				Ok: function() {
-					$(this).dialog('close');
-				}
-			}
-	});
-
-	if(location.hash.indexOf('#pic-')!=-1)
-	{
-		/* Checks whether a hash is present in the URL */
-		/* and shows the respective image */
-		$(location.hash+' a.fancybox').click();
-	}
-
 });

@@ -61,13 +61,13 @@
 
 	<body style="margin-left:100px;margin-top:50px;margin-right:100px;">
 
-		<table style="width:100%">
-		  <tr>
+		<table>
+			<tr>
 		    <td align="center" bgcolor="FAE9E3">
 					<br>
 		    	<h3>TEMPLATE</h3>
 		    	<hr>
-					<table style="width:100%">
+					<table>
 						<tr>
 							<td align="left">
 								<form action="" method="POST" enctype="multipart/form-data">
@@ -81,7 +81,7 @@
 						</tr>
 					</table>
 					<br>
-					<table style="width:100%">
+					<table>
 						<tr>
 							<td align="center">
 								<a href="#" onclick="WidthMinTmp()"><span class="glyphicon glyphicon-minus"></span></a>
@@ -100,7 +100,7 @@
 				<br>
 				<h3>IMAGE</h3>
 				<hr>
-				<table style="width:100%">
+				<table>
 					<tr>
 						<td align="left">
 							<form action="" method="POST" enctype="multipart/form-data">
@@ -113,7 +113,7 @@
 						</td>
 					</table>
 					<br>
-				<table style="width:100%">
+				<table>
 					<tr>
 						<td align="center">
 							<a href="#" onclick="WidthMinImg()"><span class="glyphicon glyphicon-minus"></span></a>
